@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px 85px;
+
+  font: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #444444;
+
+  border: 2px solid #444444;
+  background-color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}

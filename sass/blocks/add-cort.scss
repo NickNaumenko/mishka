@@ -1,0 +1,24 @@
+.add-cort__choose-size {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.add-cort__legend {
+  line-height: 30px;
+  text-align: center;
+}
+
+.add-cort__submit {
+  border: none;
+  background-color: $main-color;
+  color: #ffffff;
+  &:hover {
+    background-color: $main-color-dark;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: $main-color-dark;
+  }
+}

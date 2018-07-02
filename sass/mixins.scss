@@ -6,3 +6,10 @@
     color: rgba($color, 0.3);
   }
 }
+
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

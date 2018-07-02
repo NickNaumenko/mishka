@@ -1,0 +1,39 @@
+.goods-categories__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-style-reset;
+}
+
+.goods-categories__item {
+  width: 100%;
+}
+
+.goods-categories__link {
+  display: block;
+  padding: 25px 28px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #63d1bb;
+  &:hover {
+    padding-bottom: 30px;
+    background-color: #59d5bc;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #59d5bc;
+  }
+}
+
+.goods-categories__link--dark {
+  background-color: #56c3b2;
+  &:hover {
+    background-color: #46c1ae;
+  }
+  &:active {
+    background-color: #46c1ae;
+  }
+}
