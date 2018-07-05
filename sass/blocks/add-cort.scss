@@ -10,6 +10,32 @@
   text-align: center;
 }
 
+.add-cort__size-item {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 78px;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: 2px solid rgba(#444444, 0.1);
+  &:hover {
+    border-color: rgba(#444444, 0.3);
+  }
+  &:active {
+    border-color: rgba($main-color, 1);
+  }
+}
+
+.add-cort__size-input:checked + .add-cort__size-item {
+  border-color: rgba($main-color, 1);
+}
+
 .add-cort__submit {
   border: none;
   background-color: $main-color;

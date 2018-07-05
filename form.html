@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Form</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -46,14 +47,14 @@
 
         <ul class="order-form__type-list">
           <li class="order-form__item">
-            <input class="order-form__item order-form__item--radio" type="radio"
+            <input class="visually-hidden" type="radio"
             name="type" id="accessory" value="Аксессуар для интерьера" checked>
-            <label for="accessory">Аксессуар для интерьера</label>
+            <label class="order-form__input order-form__input--radio" for="accessory">Аксессуар для интерьера</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__item order-form__item--radio" type="radio"
+            <input class="visually-hidden" type="radio"
             name="type" id="toy" value="Детская игрушка">
-            <label for="toy">Детская игрушка</label>
+            <label class="order-form__input order-form__input--radio" for="toy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
@@ -63,34 +64,34 @@
 
         <ul class="order-form__color-list">
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="white" value="white">
-            <label for="white">Белый</label>
+            <label class="order-form__input order-form__input--check" for="white">Белый</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="grey" value="grey">
-            <label for="grey">Серый</label>
+            <label class="order-form__input order-form__input--check" for="grey">Серый</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="tiffany" value="tiffany">
-            <label for="tiffany">"Тиффани"</label>
+            <label class="order-form__input order-form__input--check" for="tiffany">"Тиффани"</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="black" value="black">
-            <label for="black">Черный</label>
+            <label class="order-form__input order-form__input--check" for="black">Черный</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="pink" value="pink">
-            <label for="pink">Розовый</label>
+            <label class="order-form__input order-form__input--check" for="pink">Розовый</label>
           </li>
           <li class="order-form__item">
-            <input class="order-form__input order-form__input--check"
+            <input class="visually-hidden"
             type="checkbox" name="color" id="orange" value="orange">
-            <label for="orange">Оранжевый</label>
+            <label class="order-form__input order-form__input--check" for="orange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
@@ -123,9 +124,9 @@
         <textarea name="message" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания по заказу"></textarea>
       </fieldset>
 
-      <small>*Поля обязательны для заполнения</small>
+      <p class="order-form__notice">*Поля обязательны для заполнения</p>
 
-      <button class="order-form__submit" type="submit">Отправить заказ</button>
+      <button class="order-form__submit button" type="submit">Отправить заказ</button>
     </form>
   </main>
 

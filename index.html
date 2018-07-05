@@ -1,18 +1,17 @@
 <!DOCTYPE html> <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mishka</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="#" alt="mishka" width="86" height="35">
-      </a>
-
+  <header class="page-header container">
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="#" alt="mishka" width="86" height="35">
+        </a>
+        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -30,11 +29,21 @@
             <a class="user-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="main-nav__list additional-list">
+          <li class="additional-list__item">
+            <a class="additional-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="additional-list__item">
+            <a class="additional-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-nav__info">
+          Бесплатная доставка по России
+        </p>
       </nav>
-    </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
     <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
 
     <section class="goods-categories">
@@ -164,15 +173,12 @@
       <fieldset class="add-cort__choose-size">
         <legend class="add-cort__legend">Выберите размер:</legend>
 
-        <label class="add-cort__size-item add-cort__size-item--s" for="s">
-          <input class="visually-hidden" type="radio" name="size" id="s" value="s" checked>s
-        </label>
-        <label class="add-cort__size-item add-cort__size-item--m" for="m">
-          <input class="visually-hidden" type="radio" name="size" id="m" value="m">m
-        </label>
-        <label class="add-cort__size-item add-cort__size-item--l" for="l">
-          <input class="visually-hidden" type="radio" name="size" id="l" value="l">l
-        </label>
+        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="s" value="s" checked="">
+        <label class="add-cort__size-item" for="s">s</label>
+        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="m" value="m">
+        <label class="add-cort__size-item" for="m">m</label>
+        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="l" value="l">
+        <label class="add-cort__size-item" for="l">l</label>
       </fieldset>
 
       <button class="add-cort__submit button">Добавить</button>

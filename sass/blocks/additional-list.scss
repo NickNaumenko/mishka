@@ -1,0 +1,21 @@
+.additional-list {
+  display: none;
+}
+
+.additional-list__link {
+  display: inline-block;
+  padding-top: 20px;
+
+  font-weight: 700;
+  color: #000000;
+
+  @include link-hover(#000000);
+}
+
+
+@media (min-width: $desktop-width) {
+  .additional-list {
+    display: flex;
+    order: 4;
+  }
+}

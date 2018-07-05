@@ -1,12 +1,11 @@
 .site-list {
-
 }
 
 .site-list__link {
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 75px;
+  padding-left: 45px;
 
   color: #000000;
   font-size: 17px;
@@ -14,4 +13,18 @@
   font-weight: bold;
 
   @include link-hover(#000000);
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    order: 1;
+  }
+
+  .site-list__link {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  order: 0;
 }

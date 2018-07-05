@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -10,12 +11,21 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
 }
 
-$main-color: #63d1bb;
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
 
-$main-color-dark: #59d5bc;
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 1250px;
+  }
+}
