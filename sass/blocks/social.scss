@@ -1,3 +1,19 @@
 .social__list {
+  display: flex;
+
   @include list-style-reset;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 80px;
+
+  @include social-hover($main-color);
+
+  // --------------
+  outline: 1px solid orange;
 }

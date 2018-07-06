@@ -13,3 +13,12 @@
 
   list-style: none;
 }
+
+@mixin social-hover($color) {
+  &:hover > svg path {
+    fill: $color;
+  }
+  &:active > svg path {
+    fill: rgba($color, 0.3);
+  }
+}
