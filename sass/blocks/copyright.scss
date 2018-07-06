@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70px;
+  height: 80px;
+
+  @include social-hover($main-color-2-dark);
+}
