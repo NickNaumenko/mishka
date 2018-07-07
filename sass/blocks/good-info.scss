@@ -102,9 +102,6 @@
 
   .good-info__description {
     width: auto;
-  }
-
-  .good-info__price {
-    margin-top: 0;
+    flex-grow: 1;
   }
 }
