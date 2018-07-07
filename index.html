@@ -14,7 +14,7 @@
         </a>
         <button class="main-nav__toggle visually-hidden">Открыть меню</button>
 
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list main-nav__list--site-list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">Каталог товаров</a>
           </li>
@@ -22,12 +22,17 @@
             <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__list main-nav__list--user-list user-list">
           <li class="user-list__item">
-            <a class="user-list__link" href="#">Поиск по сайту</a>
+            <a class="user-list__link" href="#">
+              <svg class="user-list__img" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6"><path fill="#231F20" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/></svg>
+              <span class="user-list__search">Поиск по сайту</span>
+            </a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <a class="user-list__link" href="#">
+              <svg class="user-list__img" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></svg>
+            Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
@@ -73,29 +78,34 @@
             <h3 class="good__caption">Вязаные корзинки</h3>
           </div>
 
-          <div class="good__info">
-            <p class="good__description">
-              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
-              и трех размерах.
-            </p>
-            <table class="good__features features-table">
-              <tr>
-                <td class="features-table__item">Цвет:</td>
-                <td class="features-table__value">"Тиффани"/серый</td>
-              </tr>
-              <tr>
-                <td class="features-table__item">Диаметр:</td>
-                <td class="features-table__value">25 см</td>
-              </tr>
-              <tr>
-                <td class="features-table__item">Высота:</td>
-                <td class="features-table__value">15 см</td>
-              </tr>
-            </table>
-            <img class="good__image" src="../img/triple-set-mobile%401x.jpg" alt="" width="260" height="315">
-            <p class="good__price">Цена: 990 руб.</p>
+          <div class="good__wrapper">
+            <div class="good__info">
+              <p class="good__description">
+                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
+                и трех размерах.
+              </p>
+              <table class="good__features features-table">
+                <tr>
+                  <td class="features-table__item">Цвет:</td>
+                  <td class="features-table__value">"Тиффани"/серый</td>
+                </tr>
+                <tr>
+                  <td class="features-table__item">Диаметр:</td>
+                  <td class="features-table__value">25 см</td>
+                </tr>
+                <tr>
+                  <td class="features-table__item">Высота:</td>
+                  <td class="features-table__value">15 см</td>
+                </tr>
+              </table>
+            </div>
 
-            <a class="good__order button" href="#">Заказать</a>
+            <img class="good__image" src="../img/triple-set-mobile%401x.jpg" alt="" width="260" height="315">
+
+            <div class="good__order">
+              <p class="good__price">Цена: 990 руб.</p>
+              <a class="good__order-button button" href="#">Заказать</a>
+            </div>
           </div>
         </div>
       </section>
@@ -168,9 +178,12 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo-link">
-        <img class="page-footer__logo-image" src="#" alt="mishka" width="102" height="34">
-      </a>
+      <div>
+        <a class="page-footer__logo-link">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="34"><image width="102" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBwYSMTYWVnbQAAAC/UlEQVRIx+WXy2KtIAxFBSQioPD/X1shD4La097BHZVJjzyyQnYCdFlem7HVrct/b77WCn8QswEE+Qh79OkfMZ4/1rwD7BmthZyDmhiviVkoR61H+I39YGAlzNk7cnGVWus4tdmrVfV9o6QM4H00OFacMzJkrlWlhcJ7wNFaXbmmd45RZq91LawaU9TvXCx7F3nMTsGKbzFZHaolZncMazO2k+UR6HTZiZDX1KzXFh6n/emrBnRZx2dzYFMYQKMqV4ZMzaeCnQ6D0NeJ2qF/tR9wtM7m4MEZtaflthurMWm4dAxfeRzjRxW/Mcbg30yfs+Qbh6jqXCnkNy6GV0wZIna7+TuMeE9DJ8dCbUYn+YypQaSpbhgJP2KAMWMz3WRS8wv95WxZRSjehgroDZNQJcaozSzaN65zwhwsK/7UGF2NPSCnGMuo5ryZpHcTZ0z3+ag3bZ4YCRIN0UQzAj8v4vlQJQlSfcXEd4zt4aOJPXfgFxgXKGYTpu25Wt9bP4kHBlXqSZITmxCMURgLWTDXkmPEbyWPEvd10QIuO3I2AFadPoVNjHzFFSwJutcGXC953rB4tOarrTlSYKHqRhgVEd7n3DxiuoLt+NkZY+vtXotYUSBBtMh1uNKZsZ2eXVuG0/vCZ2fHBL5TEmOme03KMfXpoMX1vC9Pla31GyJjH6lvJUvgjkGt1VE5YQ7KafMJY1m2+D1muWPUEV1dq0bHyf+G0fV1GfiMSQqjjmiskoIzPmICpfITk/CJkYbVB+YcHfAZg14tD8xqKRIZ3bhhgk5Jvno/YQCFvGOAnU1DG/8uliSBxnDqMsbYfpowZld0UGcYSNo+Mb0s/E3XG4YaPWC4TPrtuEnRgeDfMH0y1dYds80YfkFRmfCDhhJp116hNmMCRWifMIF2v88YudvpiBKswUdRlqBto+DkRjrk/DoX0ct2L87DbwPDt+BaXRSN6PzL1L+J4ND8sOPsu9DXv0XXo1Yu9pRfn+6nXrXg67a5HffH9Gye/2ilvLy2L1jlWQBgUWLiAAAAAElFTkSuQmCC"/></svg>
+        </a>
+      </div>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

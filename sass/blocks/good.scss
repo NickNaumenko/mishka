@@ -1,3 +1,10 @@
+.good__titles {
+  display: flex;
+  flex-direction: column;
+  // -------------
+  outline: 1px solid darkblue;
+}
+
 .good__caption {
   margin: 0;
   padding: 0;
@@ -6,9 +13,13 @@
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+
+  // -------------
+  outline:  1px solid orange;
 }
 
 .good__title {
+  order: 1;
   margin: 0;
   padding: 0;
 
@@ -19,9 +30,106 @@
   color: #59d5bc;
 }
 
+.good__description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.good__features {
+  margin-bottom: 30px;
+}
+
+.good__image {
+  width: 260px;
+
+}
+
 .good__price {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .good__titles {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .good__caption {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .good__title {
+    width: 99px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .good__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 55px;
+
+
+    // --------------
+    outline: 1px solid magenta;
+  }
+
+  .good__info {
+    width: 290px;
+    flex-shrink: 0;
+
+    // ------------
+    outline: 1px solid blue;
+  }
+
+  .good__order {
+    width: 290px;
+    margin-top: -124px;
+  }
+
+  .good__order-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .good {
+    position: relative;
+  }
+  .good__titles {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .good__caption {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .good__wrapper {
+    margin-left: 175px;
+  }
+
+  .good__info {
+    width: 294px;
+    margin-right: 58px;
+    margin-bottom: 124px;
+    padding-top: 160px;
+  }
 }
