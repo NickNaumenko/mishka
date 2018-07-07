@@ -2,122 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="#" alt="mishka">
-    </a>
+    <div class="page-header__wrapper container">
+      <nav class="main-nav">
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="mishka" width="86" height="35">
+        </a>
+        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle">Открыть меню</button>
-
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="main-nav__list main-nav__list--site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user-list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__img" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6"><path fill="#231F20" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/></svg>
+              <span class="user-list__search">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__img" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></svg>
+            Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list additional-list">
+          <li class="additional-list__item">
+            <a class="additional-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="additional-list__item">
+            <a class="additional-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-nav__info">
+          Бесплатная доставка по России
+        </p>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог товаров</h1>
+    <div class="">
+      <h1 class="page-main__title page-main__title--inner">Каталог товаров</h1>
+    </div>
 
-    <section class="catalog">
-      <h2 class="visually-hidden">Список товаров</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item good-info">
-          <a class="good-info__image-link" href="#">
-            <img class="good-info__image" src="#" alt="">
-          </a>
-
-          <div class="good-info__description">
-            <h3 class="good-info__caption">
-              <a class="good-info__caption-link" href="#">
-              Зайчик-попрыгайчик
+    <div class="container">
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item good-info">
+            <a class="good-info__image-link" href="#">
+              <img class="good-info__image" src="img/photo-hare-mobile%401x.jpg" alt="">
             </a>
-            </h3>
 
-            <p class="good-info__features">
-              Рост 30 см, вес 200 г
-            </p>
-          </div>
-          <p class="good-info__price">
-            <b class="good-info__cost">1 200 руб.</b>
-            <a class="good-info__cart" href="#"></a>
-          </p>
-        </li>
-
-        <li class="catalog__item good-info">
-          <a class="good-info__image-link" href="#">
-            <img class="good-info__image" src="#" alt="">
-          </a>
-
-          <div class="good-info__description">
-            <h3 class="good-info__caption">
-              <a class="good-info__caption-link" href="#">
-                Корзина для белья
+            <div class="good-info__description">
+              <h3 class="good-info__caption">
+                <a class="good-info__caption-link" href="#">
+                Зайчик-попрыгайчик
               </a>
-            </h3>
+              </h3>
 
-            <p class="good-info__features">
-              Диаметр 15 см, высота 10 см
-            </p>
-          </div>
-          <p class="good-info__price">
-            <b class="good-info__cost">690 руб.</b>
-            <a class="good-info__cart" href="#"></a>
-          </p>
-        </li>
+              <p class="good-info__features">
+                Рост 30 см, вес 200 г
+              </p>
+              <p class="good-info__price">
+                <b class="good-info__cost">1 200 руб.</b>
+                <a class="good-info__cart" href="#">
+                  <svg class="good-info__cart-image" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></svg>
+                </a>
+              </p>
 
-        <li class="catalog__item good-info">
-          <a class="good-info__image-link" href="#">
-            <img class="good-info__image" src="#" alt="">
-          </a>
+            </div>
 
-          <div class="good-info__description">
-            <h3 class="good-info__caption">
-              <a class="good-info__caption-link" href="#">
-                Большая корзина для игрушек
-              </a>
-            </h3>
+          </li>
 
-            <p class="good-info__features">
-              Диаметр 30 см, высота 30 см
-            </p>
-          </div>
-          <p class="good-info__price">
-            <b class="good-info__cost">1 500 руб.</b>
-            <a class="good-info__cart" href="#"></a>
-          </p>
-        </li>
-      </ul>
-    </section>
+          <li class="catalog__item good-info">
+            <a class="good-info__image-link" href="#">
+              <img class="good-info__image" src="img/photo-bowl-mobile%401x.jpg" alt="">
+            </a>
 
-    <section class="manufacture">
-      <h2 class="manufacture__title">Процесс производства</h2>
+            <div class="good-info__description">
+              <h3 class="good-info__caption">
+                <a class="good-info__caption-link" href="#">
+                  Корзина для белья
+                </a>
+              </h3>
 
-      <div class="manufacture__video"></div>
-      <p class="manufacture__info">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
-        том, как появляются наши товары.
-      </p>
+              <p class="good-info__features">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <p class="good-info__price">
+                <b class="good-info__cost">690 руб.</b>
+                <a class="good-info__cart" href="#">
+                  <svg class="good-info__cart-image" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></svg>
+                </a>
+              </p>
+            </div>
 
-      <a class="manufacture__order button" href="#">Сделать заказ</a>
-    </section>
+          </li>
+
+          <li class="catalog__item good-info">
+            <a class="good-info__image-link" href="#">
+              <img class="good-info__image" src="img/photo-toys-mobile%401x.jpg" alt="">
+            </a>
+
+            <div class="good-info__description">
+              <h3 class="good-info__caption">
+                <a class="good-info__caption-link" href="#">
+                  Большая корзина для игрушек
+                </a>
+              </h3>
+
+              <p class="good-info__features">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <p class="good-info__price">
+                <b class="good-info__cost">1 500 руб.</b>
+                <a class="good-info__cart" href="#">
+                  <svg class="good-info__cart-image" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></svg>
+                </a>
+              </p>
+            </div>
+
+          </li>
+        </ul>
+      </section>
+
+      <section class="manufacture">
+        <h2 class="manufacture__title">Процесс производства</h2>
+
+        <div class="manufacture__video"></div>
+        <p class="manufacture__info">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+          том, как появляются наши товары.
+        </p>
+
+        <a class="manufacture__order button" href="#">Сделать заказ</a>
+      </section>
+    </div>
   </main>
 
     <footer class="page-footer">
