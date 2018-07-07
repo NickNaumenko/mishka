@@ -1,15 +1,129 @@
 .manufacture__title {
+  position: relative;
+
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 88px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  border: 1px solid #ececec;
+}
+
+.manufacture__title::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 30px;
+
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.manufacture__info-wrapper {
+  padding: 30px;
+
+  border: 1px solid #ececec;
 }
 
 .manufacture__info {
   margin: 0;
-  padding: 0;
+  margin-bottom: 25px;
 
   font-size: 13px;
   line-height: 24px;
+}
+
+.manufacture__order {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.manufacture__video {
+  width: 320px;
+  min-height: 150px;
+
+  background-image: url("../img/video-mobile%401x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacture {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manufacture__title {
+    order: 2;
+
+    padding-top: 40px;
+    padding-left: 105px;
+    padding-bottom: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  .manufacture__title::before {
+    left: 40px;
+    top: 35px;
+  }
+
+  .manufacture__info-wrapper {
+    order: 3;
+    padding: 40px;
+
+    border-top: none;
+  }
+
+  .manufacture__info {
+    margin-bottom: 40px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacture {
+    align-items: flex-end;
+  }
+
+  .manufacture__video {
+    align-self: flex-start;
+    order: 5;
+    width: 682px;
+    min-height: 454px;
+    margin-top: -454px;
+
+    // ---------
+    outline: 1px solid orange;
+  }
+
+  .manufacture__title {
+    width: 309px;
+    padding-top: 95px;
+    padding-left: 60px;
+  }
+
+  .manufacture__title::before {
+    left: 60px;
+  }
+
+  .manufacture__info-wrapper {
+    width: 249px;
+    padding: 60px;
+  }
 }
