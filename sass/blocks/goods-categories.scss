@@ -17,23 +17,28 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #63d1bb;
+  background-color: $main-color;
   &:hover {
-    padding-bottom: 30px;
-    background-color: #59d5bc;
+    background-color: $main-color-dark;
   }
   &:active {
     color: rgba(#ffffff, 0.3);
-    background-color: #59d5bc;
+    background-color: $main-color-dark;
   }
 }
 
 .goods-categories__link--dark {
-  background-color: #56c3b2;
+  background-color: $main-color-2;
   &:hover {
-    background-color: #46c1ae;
+    background-color: $main-color-2-dark;
   }
   &:active {
-    background-color: #46c1ae;
+    background-color: $main-color-2-dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-categories__list {
+    flex-direction: row;
   }
 }

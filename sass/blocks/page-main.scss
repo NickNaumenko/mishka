@@ -1,15 +1,45 @@
 .page-main {
 }
 
+.page-main__wrapper--top {
+  background-color: #fafafa;
+  background-image: url(../img/hero-mobile%401x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -20px;
+}
+
 .page-main__title {
+  margin: 0;
   padding-top: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-bottom: 115px;
 
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
   color: #010000;
-  background-color: #f1f1f1;
+
+}
+
+.page-main__wrapper--main {
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    padding-top: 155px;
+    padding-bottom: 365px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    padding-bottom: 350px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

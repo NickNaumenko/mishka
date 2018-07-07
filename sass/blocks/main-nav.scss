@@ -5,7 +5,7 @@
 
 .main-nav__logo-link {
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 82px;
   align-self: center;
 
   // temp ----------
@@ -36,6 +36,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: -80px;
   }
 
   .main-nav__logo-link {
@@ -44,16 +45,33 @@
 
   .main-nav__list {
     flex-direction: row;
-    width: 348px;
   }
+
+  .main-nav__list--user-list {
+    order: 1;
+  }
+
+  .main-nav__list--site-list {
+    order: 2;
+  }
+
   .main-nav__info {
     display: block;
     order: 5;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__logo-link {
-    order: 1;
+    order: 2;
+  }
+
+  .main-nav__list--site-list {
+    order: 0;
+  }
+
+  .main-nav__list--user-list {
+    order: 3;
   }
 }

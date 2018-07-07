@@ -3,6 +3,8 @@
 
 .site-list__link {
   display: block;
+  box-sizing: border-box;
+  height: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 45px;
@@ -16,15 +18,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list {
-    order: 1;
+  .site-list__item:not(:last-child) {
+    margin-right: 35px;
   }
 
   .site-list__link {
     padding-left: 0;
+    padding-top: 20px;
+
+    font-size: 15px;
+
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  order: 0;
+  .site-list__link {
+    padding-top: 27px;
+
+    font-size: 17px;
+  }
 }

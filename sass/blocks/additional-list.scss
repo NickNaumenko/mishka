@@ -4,6 +4,7 @@
 
 .additional-list__link {
   display: inline-block;
+  margin-right: 55px;
   padding-top: 20px;
 
   font-weight: 700;
@@ -17,5 +18,9 @@
   .additional-list {
     display: flex;
     order: 4;
+  }
+
+  .additional-list__link {
+    margin-right: 55px;
   }
 }

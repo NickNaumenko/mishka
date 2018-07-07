@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  justify-content: center;
 
   @include list-style-reset;
 }
@@ -13,7 +14,4 @@
   height: 80px;
 
   @include social-hover($main-color-2-dark);
-
-  // --------------
-  outline: 1px solid orange;
 }
