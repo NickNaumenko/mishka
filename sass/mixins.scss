@@ -22,3 +22,21 @@
     fill: rgba($color, 0.3);
   }
 }
+
+@mixin section-header($color:#000000) {
+  color: $color;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
