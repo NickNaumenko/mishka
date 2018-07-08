@@ -1,11 +1,18 @@
 .page-main {
+  background-color: #ffffff;
 }
 
 .page-main__wrapper--top {
   background-color: #fafafa;
   background-image: url(../img/hero-mobile%401x.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% -20px;
+}
+
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-main__title {
@@ -37,6 +44,12 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  .page-main__wrapper {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -45,5 +58,11 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-main__wrapper {
+    width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
