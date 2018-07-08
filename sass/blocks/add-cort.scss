@@ -1,17 +1,26 @@
 .add-cort__choose-size {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 
   border: none;
 }
 
 .add-cort__legend {
+  margin-bottom: 25px;
+
   line-height: 30px;
   text-align: center;
 }
 
+.add-cort__size-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .add-cort__size-item {
-  display: inline-block;
+  flex-grow: 1;
+  margin-right: 7px;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 78px;
@@ -32,14 +41,21 @@
   }
 }
 
+.add-cort__size-item:last-child {
+  margin-right: 0;
+}
+
 .add-cort__size-input:checked + .add-cort__size-item {
   border-color: rgba($main-color, 1);
 }
 
 .add-cort__submit {
+  width: 100%;
+
   border: none;
   background-color: $main-color;
   color: #ffffff;
+  cursor: pointer;
   &:hover {
     background-color: $main-color-dark;
   }

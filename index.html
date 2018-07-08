@@ -218,22 +218,26 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
 
-    <form class="modal__form add-cort" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="add-cort__choose-size">
-        <legend class="add-cort__legend">Выберите размер:</legend>
+      <form class="modal__form add-cort" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="add-cort__choose-size">
+          <legend class="add-cort__legend">Выберите размер:</legend>
 
-        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="s" value="s" checked="">
-        <label class="add-cort__size-item" for="s">s</label>
-        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="m" value="m">
-        <label class="add-cort__size-item" for="m">m</label>
-        <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="l" value="l">
-        <label class="add-cort__size-item" for="l">l</label>
-      </fieldset>
+          <div class="add-cort__size-list">
+            <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="s" value="s" checked="">
+            <label class="add-cort__size-item" for="s">s</label>
+            <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="m" value="m">
+            <label class="add-cort__size-item" for="m">m</label>
+            <input class="visually-hidden add-cort__size-input" type="radio" name="size" id="l" value="l">
+            <label class="add-cort__size-item" for="l">l</label>
+          </div>
+        </fieldset>
 
-      <button class="add-cort__submit button">Добавить</button>
-    </form>
+        <button class="add-cort__submit button">Добавить</button>
+      </form>
+    </div>
   </section>
 </body>
 </html>
