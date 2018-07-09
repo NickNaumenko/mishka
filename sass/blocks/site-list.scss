@@ -21,7 +21,9 @@
 
   border-bottom: 1px solid $borders;
 
-  @include link-hover(#000000);
+  &[href] {
+    @include link-hover(#000000);
+  }
 }
 
 @media (min-width: $tablet-width) {

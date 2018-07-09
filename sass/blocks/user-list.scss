@@ -23,9 +23,11 @@
 
   border-bottom: 1px solid $borders;
 
-  @include link-hover(#000000);
+  &[href] {
+    @include link-hover(#000000);
 
-  @include social-hover($main-color);
+    @include social-hover($main-color);
+  }
 }
 
 .user-list__img {
