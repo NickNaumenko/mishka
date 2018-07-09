@@ -155,7 +155,13 @@ input + .order-form__input:hover::before {
   &:hover {
     border-bottom-color: $main-color;
   }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
+
+
 
 .order-form__message-field {
   box-sizing: border-box;
@@ -171,6 +177,10 @@ input + .order-form__input:hover::before {
 
   border: 2px solid #000000;
   background-color: transparent;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .order-form__notice {
@@ -234,6 +244,10 @@ input + .order-form__input:hover::before {
   .order-form__title {
     position: absolute;
     left: 0;
+  }
+
+  .order-form__text-field {
+    padding-left: 15px;
   }
 
   .order-form__wrapper-submit {
