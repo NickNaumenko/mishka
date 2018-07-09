@@ -1,77 +1,89 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  // ------------
+  outline: 1px solid red;
 }
+
 
 .main-nav__logo-link {
+  display: block;
   box-sizing: border-box;
-  min-height: 82px;
-  align-self: center;
+  min-height: 80px;
+  padding-top: 22px;
 
-  // temp ----------
-  outline: 1px solid green;
+  text-align: center;
+  vertical-align: middle;
+
+  // -------------
+  outline: 1px solid orange;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  // ----------
-  outline: 1px solid green;
+.main-nav__logo-image {
+  width: 86px;
+  height: 35px;
 }
 
+.main-nav__additional-list,
 .main-nav__info {
   display: none;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 20px;
+}
+
+@media (max-width: $mobile-only) {
+  .main-nav__wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
+  .main-nav.container {
+    padding: 0;
+    width: 320px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    flex-direction: row;
+  .main-nav__wrapper {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: -80px;
   }
 
-  .main-nav__logo-link {
-    min-height: 89px;
-  }
-
-  .main-nav__list {
-    flex-direction: row;
-  }
-
-  .main-nav__list--user-list {
+  .main-nav__site-list {
     order: 1;
   }
 
-  .main-nav__list--site-list {
-    order: 2;
+  .main-nav__user-list {
+    min-width: 348px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .main-nav__logo-link {
+    position: absolute;
   }
 
   .main-nav__info {
     display: block;
-    order: 5;
-    padding-top: 20px;
+    order: 4;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__logo-link {
-    order: 2;
-  }
+    left: 50%;
 
-  .main-nav__list--site-list {
+    margin-left: -43px;
+  }
+  .main-nav__site-list {
     order: 0;
   }
 
-  .main-nav__list--user-list {
-    order: 3;
+  .main-nav__user-list {
+    margin-left: 100px;
   }
+
 }
