@@ -3,6 +3,7 @@
 }
 
 .page-main__header {
+  display: flex;
   min-height: 488px;
 
   background-color: #fafafa;
@@ -13,6 +14,8 @@
 }
 
 .page-main__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
@@ -29,7 +32,7 @@
 }
 
 .page-main__menu {
-  margin-top: 134px;
+  margin-top: auto;
 }
 
 .page-main__title--inner {
@@ -41,6 +44,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__header {
+    height: 763px;
+  }
+
   .page-main__title {
     padding-top: 155px;
 
@@ -53,12 +60,24 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .page-main__wrapper--main::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: -15px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+
+    // ---------o
+    outline: 1px solid magenta;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    padding-bottom: 350px;
-
     font-size: 53px;
     line-height: 57px;
   }
