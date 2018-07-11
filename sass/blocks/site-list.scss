@@ -1,6 +1,8 @@
 .site-list {
   box-sizing: border-box;
 
+  border-top: 1px solid $borders;
+
   @include list-style-reset;
 }
 
@@ -27,6 +29,8 @@
   .site-list {
     display: flex;
     box-sizing: border-box;
+
+    border-top: none;
   }
 
   .site-list__link {
@@ -59,7 +63,7 @@
     }
 
     &:not(:first-child) {
-margin-left: 35px;
+      margin-left: 35px;
     }
   }
 }

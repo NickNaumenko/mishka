@@ -1,12 +1,23 @@
+.good {
+  padding-top: 41px;
+  padding-bottom: 42px;
+
+  // ---------
+  outline: 1px solid darkblue;
+}
+
 .good__titles {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 26px;
   // -------------
-  outline: 1px solid darkblue;
+  // outline: 1px solid darkblue;
 }
 
 .good__caption {
   margin: 0;
+  margin-bottom: 3px;
   padding: 0;
 
   @include section-header;
@@ -29,23 +40,27 @@
 
 .good__description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 
 .good__features {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .good__image {
-  width: 260px;
+  // width: 260px;
+}
 
+.good__image-wrapper {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
 }
 
 .good__price {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   font-size: 17px;
   line-height: 24px;
@@ -54,27 +69,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .good::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 23px;
-
-    // background-color: red;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat;
-    background-position: -20px;
+  .good {
+    padding-top: 41px;
   }
 
   .good__titles {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 45px;
   }
 
   .good__title {
     width: 99px;
     margin-right: 10px;
+
 
     line-height: 17px;
     text-align: center;
@@ -85,7 +94,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 55px;
 
 
     // --------------
@@ -96,13 +104,34 @@
     width: 290px;
     flex-shrink: 0;
 
+    margin-bottom: 150px;
+
     // ------------
     outline: 1px solid blue;
+  }
+
+  .good__description {
+    margin-bottom: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .good__image-wrapper {
+    width: 333px;
+    height: 404px;
+    padding-top: 7px;
   }
 
   .good__order {
     width: 290px;
     margin-top: -124px;
+  }
+
+  .good__price {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .good__order-button {
@@ -114,15 +143,12 @@
   .good {
     position: relative;
 
-    &::after {
-      width: 1050px;
-      margin: 0 auto;
-    }
+    padding-top: 70px;
   }
 
   .good__titles {
     position: absolute;
-    top: 100px;
+    top: 120px;
     z-index: 1;
 
     flex-direction: row-reverse;
@@ -141,7 +167,15 @@
   .good__info {
     width: 294px;
     margin-right: 58px;
-    margin-bottom: 124px;
-    padding-top: 160px;
+    margin-bottom: 205px;
+    padding-top: 155px;
+  }
+
+  .good__description {
+    margin-bottom: 50px;
+  }
+
+  .good__price {
+    margin-bottom: 35px;
   }
 }

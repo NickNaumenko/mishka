@@ -4,6 +4,14 @@
 }
 
 .features-table__item {
-  padding: 14px 30px 15px 0;
+  padding: 9px 30px 10px 0;
+
+  line-height: 20px;
   border-bottom: 1px solid $borders;
+}
+
+@media (min-width: $tablet-width) {
+  .features-table__item {
+    padding-right: 0px;
+  }
 }
