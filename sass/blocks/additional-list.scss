@@ -1,14 +1,11 @@
 .additional-list {
   @include list-style-reset;
   display: none;
-
-  // --------------
-  outline: 1px solid green;
 }
 
 .additional-list__link {
   display: inline-block;
-  margin-right: 55px;
+  margin-right: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -18,14 +15,3 @@
   @include link-hover(#000000);
 }
 
-
-@media (min-width: $desktop-width) {
-  .additional-list {
-    display: flex;
-    order: 4;
-  }
-
-  .additional-list__link {
-    margin-right: 55px;
-  }
-}

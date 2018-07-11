@@ -2,9 +2,6 @@
   box-sizing: border-box;
 
   @include list-style-reset;
-
-  // ---------
-  outline: 1px solid green;
 }
 
 .site-list__link {
@@ -54,5 +51,15 @@
     font-size: 17px;
 
     border: none;
+  }
+
+  .site-list__item {
+    &:first-child {
+      border-right: 1px solid $borders;
+    }
+
+    &:not(:first-child) {
+margin-left: 35px;
+    }
   }
 }

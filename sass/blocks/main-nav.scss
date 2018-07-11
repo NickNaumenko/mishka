@@ -22,7 +22,6 @@
   height: 35px;
 }
 
-.main-nav__additional-list,
 .main-nav__info {
   display: none;
   margin: 0;
@@ -140,4 +139,7 @@
     margin-left: 100px;
   }
 
+  .main-nav__additional-list {
+    display: flex;
+  }
 }

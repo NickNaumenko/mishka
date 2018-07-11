@@ -2,9 +2,6 @@
   box-sizing: border-box;
 
   @include list-style-reset;
-
-  // --------------
-  outline: 1px solid blue;
 }
 
 .user-list__link {
@@ -50,10 +47,11 @@
     padding-left: 0;
     padding-bottom: 33px;
 
+    border-bottom: none;
     border-left: 1px solid $borders;
   }
 
-  .user-list__link--serch {
+  .user-list__link--search {
     width: 84px;
   }
 
