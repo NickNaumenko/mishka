@@ -1,0 +1,9 @@
+.features-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.features-table__item {
+  padding: 14px 30px 15px 0;
+  border-bottom: 1px solid $borders;
+}
