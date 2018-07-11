@@ -74,5 +74,10 @@
   .goods-categories__link {
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      position: relative;
+      top: -5px;
+    }
   }
 }

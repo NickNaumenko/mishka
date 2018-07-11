@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Form</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav container">
+    <nav class="main-nav main-nav--closed main-nav--no-js container">
       <a class="main-nav__logo-link" href="index.html">
         <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="mishka" width="86" height="35">
       </a>
-      <button class="main-nav__toggle visually-hidden">Открыть меню</button>
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
 
       <div class="main-nav__wrapper">
         <ul class="main-nav__site-list site-list">
@@ -206,5 +207,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
