@@ -26,6 +26,12 @@
   margin: 0 auto;
 }
 
+.page-main__title-wrapper {
+  min-height: 177px;
+
+  background-color: #f1f1f1;
+}
+
 .page-main__title {
   margin: 0;
   padding-top: 68px;
@@ -41,10 +47,6 @@
 
 .page-main__menu {
   margin-top: auto;
-}
-
-.page-main__title--inner {
-  padding-bottom: 70px;
 }
 
 .page-main__wrapper--main {
@@ -63,11 +65,19 @@
     }
   }
 
+  .page-main__title-wrapper {
+    min-height: 224px;
+  }
+
   .page-main__title {
     padding-top: 155px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-main__title--inner {
+    padding-top: 100px;
   }
 
   .page-main__wrapper {
@@ -92,6 +102,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title-wrapper {
+    min-height: 255px;
+  }
+
   .page-main__title {
     font-size: 53px;
     line-height: 57px;

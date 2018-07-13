@@ -1,16 +1,12 @@
-.good-info__image {
-  height: auto;
-  vertical-align: bottom;
-}
-
 .good-info__description {
+  box-sizing: border-box;
   padding: 27px;
   padding-bottom: 0;
 
   border: 1px solid #ededed;
 }
 
-.good-info__caption{
+.good-info__caption {
   margin: 0;
   margin-bottom: 15px;
 }
@@ -75,14 +71,14 @@
   }
 
   .good-info__image-link {
-    height: 335px;
+    height: 334px;
     width: 334px;
   }
 
   .good-info__description {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 50%;
   }
 
   .good-info__price {
@@ -94,10 +90,12 @@
   .good-info {
     flex-direction: column;
     width: 315px;
+    height: auto;
   }
 
   .good-info__image-link {
     width: 100%;
+    height: 461px;
   }
 
   .good-info__description {
