@@ -97,7 +97,14 @@
     background-image: url("../img/review%401x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review%402x.jpg");
+      background-size: 350px;
+    }
   }
+
+
 
   .reviews__wrapper {
     position: relative;

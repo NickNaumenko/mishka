@@ -49,6 +49,7 @@
 
 .good__image {
   // width: 260px;
+  vertical-align: bottom;
 }
 
 .good__image-wrapper {
@@ -119,7 +120,6 @@
 
   .good__image-wrapper {
     width: 333px;
-    height: 404px;
     padding-top: 7px;
   }
 
@@ -143,7 +143,7 @@
   .good {
     position: relative;
 
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .good__titles {
@@ -166,16 +166,18 @@
 
   .good__info {
     width: 294px;
-    margin-right: 58px;
-    margin-bottom: 205px;
-    padding-top: 155px;
+    padding-top: 165px;
   }
 
   .good__description {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .good__price {
     margin-bottom: 35px;
+  }
+
+  .good__image-wrapper {
+    width: 525px;
   }
 }
