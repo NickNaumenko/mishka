@@ -1,129 +1,161 @@
-.manufacture__title {
+.manufacture {
   position: relative;
+}
 
+.manufacture__video {
+  position: absolute;
+  top: 105px;
+
+  line-height: 0;
+  // ---------
+  // outline: 1px solid orange;
+
+  video {
+    background-color: transparent;
+    background-image: url("../img/video-mobile%401x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-mobile%402x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
+.manufacture__text-wrapper {
+  position: relative;
+  padding: 33px;
+
+  border: 1px solid $borders;
+  // =========
+  // outline: 1px solid magenta;
+}
+
+.manufacture__title {
+  display: flex;
+  align-items: center;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 88px;
+  margin-bottom: 205px;
 
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  color: #000000;
 
-  border: 1px solid #ececec;
-}
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 25px;
 
-.manufacture__title::before {
-  content: "";
-  position: absolute;
-  left: 30px;
-  top: 30px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 
-  display: block;
-  width: 32px;
-  height: 32px;
-
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.manufacture__info-wrapper {
-  padding: 30px;
-
-  border: 1px solid #ececec;
+  // --------
+  outline: 1px solid blue;
 }
 
 .manufacture__info {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   font-size: 13px;
   line-height: 24px;
 }
 
 .manufacture__order {
-  padding-left: 0;
+  box-sizing: border-box;
   padding-right: 0;
+  padding-left: 0;
   width: 100%;
 }
 
-.manufacture__video {
-  width: 320px;
-  min-height: 150px;
-
-  background-image: url("../img/video-mobile%401x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 @media (min-width: $tablet-width) {
-  .manufacture {
-    display: flex;
-    flex-direction: column;
-  }
-
   .manufacture__title {
-    order: 2;
-
-    padding-top: 40px;
-    padding-left: 105px;
-    padding-bottom: 0;
+    margin-bottom: 30px;
 
     font-size: 20px;
     line-height: 24px;
 
     border-bottom: none;
-  }
 
-  .manufacture__title::before {
-    left: 40px;
-    top: 35px;
-  }
+    &::before {
+      padding-left: 33px;
+    }
 
-  .manufacture__info-wrapper {
-    order: 3;
-    padding: 40px;
 
-    border-top: none;
   }
 
   .manufacture__info {
-    margin-bottom: 40px;
-
     font-size: 15px;
     line-height: 30px;
+  }
+
+  .manufacture__video {
+    position: static;
+
+    video {
+      width: 668px;
+      height: 455px;
+
+      background-image: url("../img/video-tablet%401x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/video-tablet%402x.jpg");
+        // background-size: 100%;
+      }
+    }
+  }
+
+  .manufacture__text-wrapper {
+    padding: 35px 41px 45px;
+
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .manufacture {
-    align-items: flex-end;
+    display: flex;
   }
 
   .manufacture__video {
-    align-self: flex-start;
-    order: 5;
-    width: 682px;
-    min-height: 454px;
-    margin-top: -454px;
+    video {
+      width: 682px;
+      height: 455px;
 
-    // ---------
-    outline: 1px solid orange;
+      background-size: 100%;
+    }
+  }
+
+  .manufacture__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding: 45px 60px 60px 78px;
+
+    border-top: 1px solid $borders;
+
   }
 
   .manufacture__title {
-    width: 309px;
-    padding-top: 95px;
-    padding-left: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+
+    word-wrap: break-word;
+
+    &::before {
+      margin-bottom: 20px;
+    }
+
+    span {
+      max-width: 100%;
+    }
   }
 
-  .manufacture__title::before {
-    left: 60px;
-  }
-
-  .manufacture__info-wrapper {
-    width: 249px;
-    padding: 60px;
+  .manufacture__order {
+    margin-top: auto;
   }
 }
