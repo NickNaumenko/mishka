@@ -7,11 +7,17 @@
   min-height: 488px;
 
   background-color: #fafafa;
-  background-image: url(../img/hero-mobile%401x.jpg);
+  background-image: url("../img/hero-mobile%401x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% -20px;
+  background-position: center -15%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile%402x.jpg");
+    background-size: 575px auto;
+  }
 }
+
+
 
 .page-main__wrapper {
   display: flex;
@@ -48,6 +54,13 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     height: 750px;
+
+    background-image: url("../img/hero-tablet%401x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet%402x.jpg");
+      background-size: 1150px;
+    }
   }
 
   .page-main__title {
