@@ -1,3 +1,14 @@
+.good-info {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+}
+
 .good-info__description {
   box-sizing: border-box;
   padding: 27px;
