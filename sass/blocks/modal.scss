@@ -11,6 +11,16 @@
   background-color: rgba(#ffffff, 0.9);
 }
 
+@keyframes appearance {
+  0% {
+    top: -2000px;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
 .modal--shown {
   display: block;
 }
@@ -31,6 +41,12 @@
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(#000000, 0.25);
+}
+
+.modal--shown .modal__wrapper {
+  animation-name: appearance;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
 .modal__title {
