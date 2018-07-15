@@ -1,5 +1,7 @@
 .good-info {
-  transition: all 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  line-height: 0;
+
   &:hover {
     box-shadow: 0 6px 10px rgba(#000000, 0.1);
   }
@@ -62,18 +64,12 @@
   align-items: center;
   width: 70px;
   height: 70px;
+
+  @include social-hover($main-color);
 }
 
 .good-info__cart-image path {
   fill: rgba(#000000, 0.2);
-}
-
-.good-info__cart:hover > svg path {
-  fill: $main-color;
-}
-
-.good-info__cart:active > svg path {
-  fill: rgba($main-color, 0.3);
 }
 
 @media (min-width: $tablet-width) {
