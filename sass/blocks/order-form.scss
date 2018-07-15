@@ -121,11 +121,6 @@ input:checked + .order-form__input--check::after {
   border-radius: 50%;
 }
 
-// input:focus + .order-form__input::before {
-//   outline: thin dotted;
-//   outline: 5px auto -webkit-focus-ring-color;
-// }
-
 input:checked + .order-form__input::before {
   border-color: rgba(#444444, 0.3);
 }
@@ -136,6 +131,7 @@ input + .order-form__input:hover::before {
 
 
 .order-form__text-field {
+  box-sizing: border-box;
   width: 100%;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -232,18 +228,13 @@ input + .order-form__input:hover::before {
     padding-right: 50px;
   }
 
-  // .order-form__wrapper,
-  // .order-form__wrapper-dark {
-  //   margin-bottom: 50px;
-  // }
-
   .order-form__wrapper-dark {
     background-color: #f1f1f1;
   }
 
   .order-form__title {
     position: absolute;
-    left: 0;
+    left: 50px;
   }
 
   .order-form__text-field {
