@@ -12,13 +12,13 @@ toggle.addEventListener("click", function (evt) {
 const modal = document.querySelector(".modal");
 const button = document.querySelector(".good__order-button");
 const focusField = document.querySelector(".add-cort__size-input");
+const cartList = document.querySelectorAll(".good-info__cart");
 
 
 function showModal(a) {
   a.preventDefault();
   modal.classList.add("modal--shown");
   focusField.focus();
-
 
   window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27 && modal.classList.contains("modal--shown")) {
@@ -33,5 +33,11 @@ function showModal(a) {
   });
 }
 
+if (button) {
+  console.log(button);
+  button.addEventListener("click", showModal);
+}
 
-button.addEventListener("click", showModal);
+for (let i = 0; i < cartList.length; i++) {
+  cartList[i].addEventListener("click", showModal);
+}
