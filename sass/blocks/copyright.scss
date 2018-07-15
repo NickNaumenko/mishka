@@ -13,5 +13,6 @@
   font-weight: 700;
   color: #000000;
 
+  @include link-hover(#000000);
   @include social-hover($main-color-2-dark);
 }
