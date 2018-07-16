@@ -34,6 +34,14 @@
   .page-footer__logo-link {
     display: block;
     margin-right: 100px;
+
+    &[href]:hover svg {
+      fill: $main-color-2-dark;
+    }
+
+    &[href]:active svg {
+      fill: rgba($main-color-2-dark, 0.3);
+    }
   }
 
   .page-footer__copyright {

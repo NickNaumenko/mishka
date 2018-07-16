@@ -32,9 +32,7 @@
   top: 35px;
   left: 33px;
 
-  & > path {
-    fill: rgba(#000000, 0.3);
-  }
+  fill: rgba(#000000, 0.3);
 }
 
 @media (min-width: $tablet-width) {

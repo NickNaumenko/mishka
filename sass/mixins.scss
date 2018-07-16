@@ -15,10 +15,10 @@
 }
 
 @mixin social-hover($color) {
-  &:hover > svg path {
+  &:hover > svg {
     fill: $color;
   }
-  &:active > svg path {
+  &:active > svg {
     fill: rgba($color, 0.3);
   }
 }
