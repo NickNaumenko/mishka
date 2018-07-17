@@ -13,6 +13,16 @@
   text-align: center;
   vertical-align: middle;
 
+  &[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   // -------------
   outline: 1px solid orange;
 }
@@ -95,6 +105,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__logo-link {
+    min-height: 88px;
+  }
+
+  .main-nav__logo-image {
+    width: 115px;
+    height: 46px;
+  }
+
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
@@ -129,8 +148,15 @@
   .main-nav__logo-link {
     left: 50%;
 
-    margin-left: -43px;
+    margin-left: -74.5px;
+    padding-top: 9px;
   }
+
+  .main-nav__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
   .main-nav__site-list {
     order: 0;
   }
