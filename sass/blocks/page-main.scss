@@ -3,13 +3,10 @@
 }
 
 .page-main__header {
-  display: flex;
-  min-height: 488px;
-
   background-color: #fafafa;
   background-image: url("../img/hero-mobile%401x.jpg");
   background-repeat: no-repeat;
-  background-position: center -15%;
+  background-position: center 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile%402x.jpg");
@@ -17,45 +14,32 @@
   }
 }
 
-
-
-.page-main__wrapper {
+.page-main__header-wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
+  height: 488px;
   margin: 0 auto;
-}
 
-.page-main__title-wrapper {
-  min-height: 177px;
-
-  background-color: #f1f1f1;
+  // ------
+  outline: 1px solid green;
 }
 
 .page-main__title {
-  margin: 0;
-  padding-top: 68px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 70px 30px 0;
 
+  @include section-header;
   font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
   text-align: center;
-  color: #010000;
 }
 
 .page-main__menu {
   margin-top: auto;
 }
 
-.page-main__wrapper--main {
-  background-color: #ffffff;
-}
-
 @media (min-width: $tablet-width) {
   .page-main__header {
-    height: 750px;
+    position: relative;
 
     background-image: url("../img/hero-tablet%401x.jpg");
 
@@ -63,57 +47,48 @@
       background-image: url("../img/hero-tablet%402x.jpg");
       background-size: 1150px;
     }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 20px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+
+      // -----------
+      outline: 1px solid orange;
+    }
   }
 
-  .page-main__title-wrapper {
-    min-height: 224px;
+  .page-main__header-wrapper {
+    width: 668px;
+    height: 755px;
+    padding: 0 50px;
   }
 
   .page-main__title {
-    padding-top: 155px;
-
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .page-main__title--inner {
-    padding-top: 100px;
-  }
-
-  .page-main__wrapper {
-    width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .page-main__wrapper--main::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 34px;
-    margin-top: -20px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-
-    // ---------o
-    outline: 1px solid magenta;
+    padding: 150px 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__title-wrapper {
-    min-height: 255px;
+  .page-main__header {
+    &::after {
+      height: 34px;
+    }
+  }
+  .page-main__header-wrapper {
+    width: 1050px;
+    padding: 0 100px;
   }
 
   .page-main__title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .page-main__wrapper {
-    width: 1050px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 145px;
   }
 }
