@@ -11,12 +11,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 74px;
+  }
   .catalog__item {
     margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 127px;
+  }
+
   .catalog__list {
     display: flex;
   }
