@@ -1,29 +1,27 @@
 .good {
-  padding-top: 28px;
-  padding-bottom: 42px;
+  padding: 27px 30px 34px;
 
   // ---------
-  outline: 1px solid darkblue;
+  // outline: 1px solid darkblue;
 }
 
 .good__titles {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 26px;
+  margin-bottom: 21px;
   // -------------
   // outline: 1px solid darkblue;
 }
 
 .good__caption {
-  margin: 0;
-  margin-bottom: 3px;
-  padding: 0;
-
   @include section-header;
 
+  margin-bottom: 5px;
+  padding: 0;
+
   // -------------
-  outline:  1px solid orange;
+  // outline:  1px solid orange;
 }
 
 .good__title {
@@ -40,7 +38,7 @@
 
 .good__description {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .good__features {
@@ -48,13 +46,12 @@
 }
 
 .good__image {
-  // width: 260px;
   vertical-align: bottom;
 }
 
 .good__image-wrapper {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   padding: 0;
 }
 
@@ -71,14 +68,16 @@
 
 @media (min-width: $tablet-width) {
   .good {
-    padding-top: 41px;
+    padding-top: 34px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .good__titles {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   .good__title {
@@ -95,10 +94,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
     // --------------
-    outline: 1px solid magenta;
+    // outline: 1px solid magenta;
   }
 
   .good__info {
@@ -108,11 +105,11 @@
     margin-bottom: 150px;
 
     // ------------
-    outline: 1px solid blue;
+    // outline: 1px solid blue;
   }
 
   .good__description {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 
     font-size: 17px;
     line-height: 30px;
@@ -125,7 +122,7 @@
 
   .good__order {
     width: 290px;
-    margin-top: -124px;
+    margin-top: -130px;
   }
 
   .good__price {
@@ -143,12 +140,15 @@
   .good {
     position: relative;
 
-    padding-top: 60px;
+    padding-top: 45px;
+    padding-right: 0;
+    padding-bottom: 53px;
+    padding-left: 0;
   }
 
   .good__titles {
     position: absolute;
-    top: 120px;
+    top: 105px;
     z-index: 1;
 
     flex-direction: row-reverse;
@@ -174,7 +174,7 @@
   }
 
   .good__price {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .good__image-wrapper {

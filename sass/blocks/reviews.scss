@@ -1,7 +1,5 @@
 .reviews {
   position: relative;
-  width: 260px;
-  margin: 0 auto;
   padding-top: 28px;
   padding-right: 30px;
   padding-bottom: 50px;
@@ -20,24 +18,24 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
 
-    background-position: -10px 0;
+    background-position: 0 0;
   }
 
-    // ------------------
-    outline: 1px solid tomato;
+  // ------------------
+  // outline: 1px solid blue;
 }
 
 .reviews__wrapper {
   // ----------
-  outline: 1px solid grey;
+  // outline: 1px solid grey;
 }
 
 .reviews__title {
-  margin: 0;
+  @include section-header;
   margin-bottom: 25px;
   padding: 0;
 
-  @include section-header;
+
 }
 
 .reviews__list {
@@ -111,15 +109,14 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: 668px;
-    padding: 75px 50px;
+    padding: 75px 50px 110px;
 
     background-image: url("../img/review%401x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
 
     &::before {
-      height: 15px;
+      height: 25px;
     }
 
 
@@ -173,10 +170,9 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 1050px;
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
 
     &::before {
       height: 25px;
