@@ -148,30 +148,118 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form__preview {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .order-form__set:nth-of-type(2n) {
     background-color: #f1f1f1;
   }
 
-  .order-form__wrapper {
-   display: flex;
-   flex-wrap: wrap;
+  .order-form__wrapper,
+  .order-form__preview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0;
+  }
 
+  .order-form__input-list,
+  .order-form__input-text[type="tel"],
+  .order-form__input-text[type="email"],
+  .order-form__message {
+    width: 500px;
+  }
+
+  .order-form__input-item {
+    display: flex;
+    align-items: baseline;
+    min-width: 200px;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .order-form__label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-form__input:checked + .order-form__label--radio::after {
+    top: 15px;
+    left: 15px;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .order-form__input:checked + .order-form__label--checkbox::after {
+    top: 15px;
+    left: 10px;
+
+    width: 33px;
+    height: 22px;
   }
 
   .order-form__title {
     width: 168px;
+    flex-shrink: 0;
   }
 
-  .order-form__input-list {
-    width: 500px;
-  }
 
   .order-form__input-list--color {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    li {
-      width: 250px;
-    }
+
+  .order-form__label-text {
+    margin-right: 25px;
+  }
+
+
+  .order-form__wrapper--submit {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+
+
+    outline: 1px solid green;
+  }
+
+  .order-form__info {
+    margin-bottom: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__submit {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__wrapper,
+  .order-form__preview {
+    position: relative;
+    width: 700px;
+  }
+
+  .order-form__title {
+    position: absolute;
+    left: -115px;
+    top: 18px;
+    width: 115px;
+  }
+
+  .order-form__input-list,
+  .order-form__input-text[type="tel"],
+  .order-form__input-text[type="email"],
+  .order-form__message {
+    width: 700px;
   }
 }
