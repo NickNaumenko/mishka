@@ -41,3 +41,22 @@ if (button) {
 for (let i = 0; i < cartList.length; i++) {
   cartList[i].addEventListener("click", showModal);
 }
+
+function initMap() {
+  var point = {lat: 59.93873, lng: 30.32310};
+  var center = {lat: 59.9387, lng: 30.3230};
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: center
+  });
+  var image = {
+    url: "img/icon-map-pin.svg",
+    size: new google.maps.Size(67, 100),
+    anchor: new google.maps.Point(33.5, 100)
+  }
+  var marker = new google.maps.Marker({
+    position: point,
+    map: map,
+    icon: image
+  });
+}
