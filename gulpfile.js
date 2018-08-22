@@ -17,6 +17,8 @@ const svgstore = require("gulp-svgstore");
 const run = require("run-sequence");
 const minify = require('gulp-minify');
 
+const cheerio = require("gulp-cheerio");
+
 gulp.task("style", () => {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -50,12 +52,7 @@ gulp.task("images", () => {
     .pipe(imagemin([
       imagemin.jpegtran({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo({
-          plugins: [
-              {removeViewBox: false},
-              {cleanupIDs: false}
-          ]
-      })
+      imagemin.svgo()
     ]))
     .pipe(gulp.dest("img"));
 });
@@ -93,6 +90,12 @@ gulp.task("js", () => {
 
 gulp.task("sprite", () => {
   return gulp.src("img/**/{icon-*.svg,logo-*svg}")
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+        parserOptions: { xmlMode: true }
+      }))
     .pipe(svgstore({
       inlineSvg: true
     }))

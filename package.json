@@ -9,6 +9,7 @@
     "browser-sync": "2.18.x",
     "del": "^3.0.0",
     "gulp": "3.9.x",
+    "gulp-cheerio": "^0.6.3",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-minify": "^3.1.0",
