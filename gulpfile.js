@@ -16,7 +16,6 @@ const del = require("del");
 const svgstore = require("gulp-svgstore");
 const run = require("run-sequence");
 const minify = require('gulp-minify');
-
 const cheerio = require("gulp-cheerio");
 
 gulp.task("style", () => {

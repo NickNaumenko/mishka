@@ -50,7 +50,7 @@ function initMap() {
     center: center
   });
   var image = {
-    url: "img/icon-map-pin.svg",
+    url: "img/map-marker.png",
     size: new google.maps.Size(67, 100),
     anchor: new google.maps.Point(33.5, 100)
   }
