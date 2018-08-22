@@ -34,7 +34,9 @@
 }
 
 .order-form__title {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin-bottom: 23px;
   padding: 0;
 
@@ -43,6 +45,16 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $main-color;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    min-width: 10px;
+    height: 1px;
+    margin-left: 22px;
+
+    background-color: $main-color;
+  }
 }
 
 
@@ -74,9 +86,6 @@
 
     border: 2px solid #444444;
   }
-
-  // ----------
-  // outline: 1px solid orange;
 }
 
 .order-form__label--radio {
@@ -222,6 +231,10 @@
     padding-bottom: 50px;
   }
 
+  .order-form__title::after {
+    display: none;
+  }
+
   .order-form__input-list--color {
     margin-bottom: -10px;
   }
@@ -300,9 +313,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
-
-
-    outline: 1px solid green;
   }
 
   .order-form__info {
