@@ -34,7 +34,6 @@ function showModal(a) {
 }
 
 if (button) {
-  console.log(button);
   button.addEventListener("click", showModal);
 }
 
